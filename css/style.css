@@ -964,6 +964,7 @@ button:focus{
 }
 .event-img img{
 	transition: all 0.9s ease 0s;
+	width: 160px;
 }
 .event-inner:hover .event-img img{
 	-moz-transform: scale(1.5) rotate(-10deg);
