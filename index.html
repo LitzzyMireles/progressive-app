@@ -32,8 +32,11 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+  
 
+	
 </head>
+
 <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
 
 	<!-- LOADER -->
@@ -508,76 +511,77 @@
 	<!-- End Events -->
 	
 	<!-- Start Contact -->
-	<div id="contact" class="contact-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="title-box">
-						<h2>Contact wth us</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-					</div>
+<div id="contact" class="contact-box">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="title-box">
+					<h2>Contact wth us</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-12 col-sm-12 col-xs-12">
-				  <div class="contact-block">
-					<form id="contactForm">
-					  <div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
-								<div class="help-block with-errors"></div>
-							</div>                                 
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
-								<div class="help-block with-errors"></div>
-							</div> 
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<select class="custom-select d-block form-control" id="guest" required data-error="Please select an item in the list.">
-								  <option disabled selected>Number Of Guest*</option>
-								  <option value="1">1</option>
-								  <option value="2">2</option>
-								  <option value="3">3</option>
-								  <option value="4">4</option>
-								  <option value="5">5</option>
-								</select>
-								<div class="help-block with-errors"></div>
-							</div> 
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<select class="custom-select d-block form-control" id="event" required data-error="Please select an item in the list.">
-								  <option disabled selected>I Am Attending*</option>
-								  <option value="1">All events</option>
-								  <option value="2">Wedding ceremony</option>
-								  <option value="3">Reception party</option>
-								</select>
-								<div class="help-block with-errors"></div>
-							</div> 
-						</div>
-						<div class="col-md-12">
-							<div class="form-group"> 
-								<textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
-								<div class="help-block with-errors"></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-sm-12 col-xs-12">
+				<div class="contact-block">
+					<form id="contactForm" action="contact.php" method="POST">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+									<div class="help-block with-errors"></div>
+								</div>                                 
 							</div>
-							<div class="submit-button text-center">
-								<button class="btn btn-common" id="submit" type="submit">Send Message</button>
-								<div id="msgSubmit" class="h3 text-center hidden"></div> 
-								<div class="clearfix"></div> 
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="email" placeholder="Your Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+									<div class="help-block with-errors"></div>
+								</div> 
 							</div>
-						</div>
-					  </div>            
+							<div class="col-md-6">
+								<div class="form-group">
+									<select class="custom-select d-block form-control" id="guest" name="guest" required>
+										<option disabled selected>Number Of Guest*</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+									<div class="help-block with-errors"></div>
+								</div> 
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<select class="custom-select d-block form-control" id="event" name="event" required>
+										<option disabled selected>I Am Attending*</option>
+										<option value="All events">All events</option>
+										<option value="Wedding ceremony">Wedding ceremony</option>
+										<option value="Reception party">Reception party</option>
+									</select>
+									<div class="help-block with-errors"></div>
+								</div> 
+							</div>
+							<div class="col-md-12">
+								<div class="form-group"> 
+									<textarea class="form-control" id="message" name="message" placeholder="Your Message" rows="8" required></textarea>
+									<div class="help-block with-errors"></div>
+								</div>
+								<div class="submit-button text-center">
+									<button class="btn btn-common" id="submit" type="submit">Send Message</button>
+									<div id="msgSubmit" class="h3 text-center hidden"></div> 
+									<div class="clearfix"></div> 
+								</div>
+							</div>
+						</div>            
 					</form>
-				  </div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- End Contact -->
+</div>
+<!-- End Contact -->
+
 	
 	<!-- Start Footer -->
 	<footer class="footer-box">
@@ -605,5 +609,29 @@
 	<script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
+
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-analytics.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+	  
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+		  apiKey: "AIzaSyBiSSKJU5xozOwdD_V4-an3Q4tANelxvc8",
+		  authDomain: "future-oasis-365501.firebaseapp.com",
+		  projectId: "future-oasis-365501",
+		  storageBucket: "future-oasis-365501.firebasestorage.app",
+		  messagingSenderId: "231549702738",
+		  appId: "1:231549702738:web:eb9325617e8d701ae0c58b",
+		  measurementId: "G-RZJLLC9BGL"
+		};
+	  
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	  </script>
 </body>
 </html>
