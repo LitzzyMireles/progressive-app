@@ -1,78 +1,71 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+var_dump(realpath('vendor/autoload.php'));
+
+ // Asegúrate de que PHPMailer está instalado
 
 $errorMSG = "";
 
-// NAME
-if (empty($_POST["name"])) {
-    $errorMSG = "Name is required ";
-} else {
-    $name = $_POST["name"];
+// Validar y obtener los datos del formulario
+$name = isset($_POST["name"]) ? htmlspecialchars($_POST["name"], ENT_QUOTES, 'UTF-8') : '';
+$number = isset($_POST["number"]) ? htmlspecialchars($_POST["number"], ENT_QUOTES, 'UTF-8') : '';
+$guest = isset($_POST["guest"]) ? htmlspecialchars($_POST["guest"], ENT_QUOTES, 'UTF-8') : '';
+$event = isset($_POST["event"]) ? htmlspecialchars($_POST["event"], ENT_QUOTES, 'UTF-8') : '';
+$message = isset($_POST["message"]) ? htmlspecialchars($_POST["message"], ENT_QUOTES, 'UTF-8') : '';
+
+// Validaciones
+if (empty($name)) $errorMSG .= "El nombre es obligatorio. ";
+if (empty($number)) $errorMSG .= "El número de teléfono es obligatorio. ";
+if (empty($guest)) $errorMSG .= "El número de invitados es obligatorio. ";
+if (empty($event)) $errorMSG .= "El tipo de evento es obligatorio. ";
+if (empty($message)) $errorMSG .= "El mensaje es obligatorio. ";
+
+// Si hay errores, los mostramos
+if (!empty($errorMSG)) {
+    echo $errorMSG;
+    exit;
 }
 
-// EMAIL
-if (empty($_POST["email"])) {
-    $errorMSG .= "Email is required ";
-} else {
-    $email = $_POST["email"];
-}
+// Datos de la cuenta de correo
+$emailTo = "DreamEvent@gmail.com";  // Correo destinatario
+$emailFrom = "mireleslitzzy.06@@gmail.com";  // Correo remitente
+$emailPassword = "gcgdsyoqsufbsyuc";  // Contraseña de aplicación
+$smtpHost = "smtp.gmail.com";  // Servidor SMTP de Gmail
+$smtpPort = 587;  // Puerto SMTP (TLS)
 
-// MSG Guest
-if (empty($_POST["guest"])) {
-    $errorMSG .= "Subject is required ";
-} else {
-    $guest = $_POST["guest"];
-}
+$mail = new PHPMailer(true);
 
+try {
+    // Configuración del servidor SMTP
+    $mail->isSMTP();
+    $mail->Host = $smtpHost;
+    $mail->SMTPAuth = true;
+    $mail->Username = $emailFrom;
+    $mail->Password = $emailPassword;
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port = $smtpPort;
 
-// MSG Event
-if (empty($_POST["event"])) {
-    $errorMSG .= "Subject is required ";
-} else {
-    $event = $_POST["event"];
-}
+    // Configuración del correo
+    $mail->setFrom($emailFrom, 'Dream Event'); // Nombre del remitente
+    $mail->addAddress($emailTo); // Destinatario
+    $mail->addReplyTo($number, $name); // Responder al número de teléfono
 
+    $mail->Subject = "Nueva solicitud de contacto";
+    $mail->Body = "Nombre: $name\n"
+        . "Teléfono: $number\n"
+        . "Número de invitados: $guest\n"
+        . "Evento: $event\n"
+        . "Mensaje: $message\n";
 
-// MESSAGE
-if (empty($_POST["message"])) {
-    $errorMSG .= "Message is required ";
-} else {
-    $message = $_POST["message"];
-}
-
-
-$EmailTo = "armanmia7@gmail.com";
-$Subject = "New Message Received";
-
-// prepare email body text
-$Body = "";
-$Body .= "Name: ";
-$Body .= $name;
-$Body .= "\n";
-$Body .= "Email: ";
-$Body .= $email;
-$Body .= "\n";
-$Body .= "guest: ";
-$Body .= $guest;
-$Body .= "\n";
-$Body .= "event: ";
-$Body .= $event;
-$Body .= "\n";
-$Body .= "Message: ";
-$Body .= $message;
-$Body .= "\n";
-
-// send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
-
-// redirect to success page
-if ($success && $errorMSG == ""){
-   echo "success";
-}else{
-    if($errorMSG == ""){
-        echo "Something went wrong :(";
+    // Enviar el correo
+    if ($mail->send()) {
+        echo "success";
     } else {
-        echo $errorMSG;
+        echo "Error al enviar el mensaje.";
     }
+} catch (Exception $e) {
+    echo "Error: {$mail->ErrorInfo}";
 }
-
 ?>
