@@ -95,7 +95,9 @@
                         <li><a class="nav-link active" href="#home">Home</a></li>
                         <li><a class="nav-link" href="#about">Org</a></li>
                         <li><a class="nav-link" href="#events">Events</a></li>
-						<li><a class="nav-link" href="#contact">Contact</a></li>
+						<li><a class="nav-link" href="#contactForm">Contact</a></li>
+						<li><a class="nav-link" href="login.php">inicia sesion</a></li>
+						
                     </ul>
                 </div>
             </div>
@@ -243,7 +245,7 @@
 						<h2>Bodas</h2>
 						<p>Organización de bodas íntimas o medianas, incluyendo planificación, decoración, catering, coordinación de proveedores y asesoramiento en cada detalle del evento para hacer realidad la visión de los novios.
 						</p>
-						<a href="#">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+						<a href="#contactForm">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
@@ -253,7 +255,7 @@
 						</div>
 						<h2>Despedidas de soltera </h2>
 						<p>Decoraciones elegantes, kits personalizados, actividades dinámicas.</p>
-						<a href="#">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+						<a href="#contactForm">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
@@ -263,7 +265,7 @@
 						</div>
 						<h2>XV años</h2>
 						<p>Organización de celebraciones de quinceañeras, incluyendo temáticas personalizadas, selección de vestidos, coreografías, coordinación de salón, decoración especial y banquete. </p>
-						<a href="#">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+						<a href="#contactForm">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
@@ -274,7 +276,7 @@
 						<h2>Fiestas infantiles</h2>
 						<p>Temáticas de personajes, estaciones de juegos, shows interactivos.
 						</p>
-						<a href="#">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+						<a href="#contactForm">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
@@ -284,7 +286,7 @@
 						</div>
 						<h2>Baby showers</h2>
 						<p>Decoraciones temáticas, mesas de dulces, juegos y dinámicas para los invitados. </p>
-						<a href="#">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+						<a href="#contactForm">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
@@ -294,7 +296,7 @@
 						</div>
 						<h2>Graduaciones</h2>
 						<p>Decoraciones personalizadas, mesas de dulces y organización de discursos y presentaciones.</p>
-						<a href="#">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+						<a href="#contactForm">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
@@ -304,7 +306,7 @@
 						</div>
 						<h2>Propuestas de matrimonio</h2>
 						<p>Decoraciones temáticas, mesas de dulces, juegos y dinámicas para los invitados. </p>
-						<a href="#">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+						<a href="#contactForm">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
@@ -314,7 +316,7 @@
 						</div>
 						<h2>Bautizos</h2>
 						<p>Decoraciones temáticas, mesas de dulces, juegos y dinámicas para los invitados. </p>
-						<a href="#">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+						<a href="#contactForm">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
@@ -324,7 +326,7 @@
 						</div>
 						<h2>Fiesta temáticas</h2>
 						<p>Eventos con ambientaciones especiales como fiestas de los años 80, Halloween, Navidad, etc. </p>
-						<a href="#">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+						<a href="#contactForm">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
 			</div>
@@ -361,7 +363,7 @@
 			<div class="row">
 				<div class="col-lg-12 col-sm-12 col-xs-12">
 				  <div class="contact-block">
-					<form method="POST"  id="contactForm">
+					<form method="POST"  id="contactForm"  action="contacto.php">
 					  <div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
@@ -371,13 +373,13 @@
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<input type="text" placeholder="Numero De Telefono" id="number" class="form-control" name="number" >
+								<input type="text" placeholder="Numero De Telefono" id="number" class="form-control" name="number"  required>
 								<div class="help-block with-errors"></div>
 							</div> 
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<select class="custom-select d-block form-control" id="guest" name="guest">
+								<select class="custom-select d-block form-control" id="guest" name="guest" required>
 								  <option disabled selected>Numero de Invitados</option>
 								  <option value="20-40">20-40</option>
 								  <option value="40-60">40-60</option>
@@ -390,9 +392,9 @@
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<select class="custom-select d-block form-control" id="event" name="event" >
+								<select class="custom-select d-block form-control" id="event" name="event" required >
 								  <option disabled selected>SERVICIOS*</option>
-								  <option value="Bodas">Bodas</option>
+								  <option value="Boda">Boda</option>
 								  <option value="Despedidas de soltera">Despedidas de soltera</option>
 								  <option value="XV Años">XV Años</option>
 								  <option value="Fiestas Infantiles">Fiestas Infantiles</option>
@@ -478,8 +480,72 @@ $(document).ready(function() {
         });
     });
 });
-</script>
 
+</script>
+<!-- Importa los scripts de Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage.js"></script>
+<script type="module" src="index.js"></script>
+
+<script type="module">
+  // Importar las funciones necesarias desde el SDK
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
+  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-firestore.js";
+
+  // Configuración de Firebase (reemplaza con tu propia configuración)
+  const firebaseConfig = {
+    apiKey: "AIzaSyBhDsiKAiCJjaLNemZFJw9R0HDC5OMNvmE",
+    authDomain: "dream-event-290b1.firebaseapp.com",
+    projectId: "dream-event-290b1",
+    storageBucket: "dream-event-290b1.firebasestorage.app",
+    messagingSenderId: "25099640705",
+    appId: "1:25099640705:web:aa407110982ffa0809d280"
+  };
+
+  // Inicializar Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // Obtener el formulario y manejar el envío
+  const form = document.getElementById('contactForm');
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault(); // Evitar que la página se recargue al enviar el formulario
+
+    // Obtener los valores del formulario
+    const name = document.getElementById('name').value;
+    const number = document.getElementById('number').value;
+    const guest = document.getElementById('guest').value;
+    const eventType = document.getElementById('event').value;
+    const message = document.getElementById('message').value;
+
+    try {
+      // Guardar los datos en Firestore
+      await addDoc(collection(db, "contact_messages"), {
+        name: name,
+        number: number,
+        guest: guest,
+        eventType: eventType,
+        message: message,
+        timestamp: new Date()
+      });
+
+      // Mostrar mensaje de éxito
+      document.getElementById('msgSubmit').classList.remove('hidden');
+      document.getElementById('msgSubmit').innerText = "¡Tu mensaje ha sido enviado correctamente!";
+
+      // Limpiar el formulario
+      form.reset();
+
+    } catch (e) {
+      console.error("Error al enviar el mensaje: ", e);
+      document.getElementById('msgSubmit').classList.remove('hidden');
+      document.getElementById('msgSubmit').innerText = "Hubo un error al enviar tu mensaje. Intenta nuevamente.";
+    }
+  });
+</script>
 
 
 
