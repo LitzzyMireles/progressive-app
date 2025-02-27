@@ -1,3 +1,43 @@
+<?php
+session_start();
+
+// Detalles de la conexión a la base de datos
+$host = 'localhost';
+$username = 'root';
+$password = '';
+$dbname = 'dream_event_db';
+
+$conn = new mysqli($host, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    // Verificar las credenciales en la base de datos
+    $sql = "SELECT * FROM admin WHERE email = '$email' AND password = '$password'";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // El usuario existe en la base de datos
+        $_SESSION['user'] = $email;
+
+        // Registra al usuario en Firestore (método de autenticación remota)
+        $firebase_url = 'https://www.googleapis.com/auth/firebase';
+        // Aquí agregarías tu autenticación en Firebase, con la lógica para agregar al usuario a Firestore
+
+        // Redirigir a la página principal
+        header("Location: index2.php");
+        exit();
+    } else {
+        echo "<p>Credenciales incorrectas.</p>";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -137,5 +177,6 @@ function handleRegister() {
 }
 
     </script>
+    <script type="module" src="index2.js"></script>
 </body>
 </html>
