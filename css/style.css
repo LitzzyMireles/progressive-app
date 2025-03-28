@@ -962,10 +962,12 @@ button:focus{
 	margin-bottom: 15px;
 	overflow: hidden;
 }
-.event-img img{
-	transition: all 0.9s ease 0s;
-	width: 160px;
+.event-img img {
+    width: 100%; /* Que ocupen el ancho completo */
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Asegura que todas se vean bien sin deformarse */
 }
+
 .event-inner:hover .event-img img{
 	-moz-transform: scale(1.5) rotate(-10deg);
 	-webkit-transform: scale(1.5) rotate(-10deg);
@@ -981,10 +983,19 @@ button:focus{
 	font-size: 18px;
 	font-weight: 500;
 	text-transform: uppercase;
+	margin-top: auto; 
 }
 .event-inner a:hover{
 	background: #63c7bd;
 }
+.event-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Hace que todas tengan la misma altura */
+    padding: 20px;
+}
+
 
 /*------------------------------------------------------------------
     Contact
@@ -993,7 +1004,6 @@ button:focus{
 .contact-box{
 	padding: 70px 0px;
 }
-.contact-block{}
 
 .contact-block .form-group .form-control{
 	background: #890025;

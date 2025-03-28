@@ -2,12 +2,16 @@
 session_start();
 
 // Detalles de la conexión a la base de datos
-$host = 'localhost';
-$username = 'root';
-$password = '';
-$dbname = 'dream_event_db';
+// $host = 'localhost';
+// $username = 'root';
+// $password = '';
+// $dbname = 'dream_event_db';
+$servername = "mnz.domcloud.co";
+$username = "dream-event-team";
+$password = ")1)X5gkmJ4W+1u1JiO";
+$dbname = "dream_event_team_db";
 
-$conn = new mysqli($host, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);

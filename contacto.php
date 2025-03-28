@@ -5,10 +5,14 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
 // Configuración de la base de datos
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "dream_event_db";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "dream_event_db";
+$servername = "mnz.domcloud.co";
+$username = "dream-event-team";
+$password = ")1)X5gkmJ4W+1u1JiO";
+$dbname = "dream_event_team_db";
 
 // Establecer cabecera de respuesta para JSON
 header('Content-Type: application/json');
