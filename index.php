@@ -93,10 +93,10 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
                         <li><a class="nav-link active" href="#home">Home</a></li>
-                        <li><a class="nav-link" href="#about">Org</a></li>
+                        <li><a class="nav-link" href="#about">STAFF</a></li>
                         <li><a class="nav-link" href="#events">Events</a></li>
 						<li><a class="nav-link" href="#contactForm">Contact</a></li>
-						<li><a class="nav-link" href="login.php">inicia sesion</a></li>
+						<li><a class="nav-link" href="login.php">LOGIN</a></li>
 						
                     </ul>
                 </div>
