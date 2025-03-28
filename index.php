@@ -127,7 +127,7 @@
 				<div class="row">
 					<div class="col-lg-12 text-center">
 						<div class="title-box">
-							<h2>ORGANIGRAMA <span> </span> DREAM EVENT TEAM</h2>
+							<h2>STAFF <span> </span> DREAM EVENT TEAM</h2>
 						</div>
 					</div>
 				</div>
@@ -243,8 +243,7 @@
 							<img class="img-fluid" src="https://i.pinimg.com/474x/90/b4/3d/90b43d07b86fc4fbe7ab79b85d97daeb.jpg" alt="" />
 						</div>
 						<h2>Bodas</h2>
-						<p>Organización de bodas íntimas o medianas, incluyendo planificación, decoración, catering, coordinación de proveedores y asesoramiento en cada detalle del evento para hacer realidad la visión de los novios.
-						</p>
+						<p>Organización de bodas íntimas o medianas, incluyendo planificación, decoración, catering, coordinación y muchas cosas mas <p>
 						<a href="#contactForm">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
@@ -254,7 +253,7 @@
 							<img class="img-fluid" src="https://i.pinimg.com/236x/14/ff/2e/14ff2e0e87f99b98c3814ade6e288509.jpg" alt="" />
 						</div>
 						<h2>Despedidas de soltera </h2>
-						<p>Decoraciones elegantes, kits personalizados, actividades dinámicas.</p>
+						<p>Decoraciones elegantes que transforman cualquier espacio en un ambiente sofisticado y acogedor, kits personalizados diseñados con atención al detalle para adaptarse a cada ocasión especial.<p>
 						<a href="#contactForm">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
@@ -264,7 +263,7 @@
 							<img class="img-fluid" src="https://i.pinimg.com/236x/93/59/e5/9359e56c97e9f38e33eee09f2f4ece1d.jpg" alt="" />
 						</div>
 						<h2>XV años</h2>
-						<p>Organización de celebraciones de quinceañeras, incluyendo temáticas personalizadas, selección de vestidos, coreografías, coordinación de salón, decoración especial y banquete. </p>
+						<p>Organización de celebraciones de quinceañeras, incluyendo temáticas personalizadas, selección de vestidos y mas...<p>
 						<a href="#contactForm">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
@@ -274,7 +273,7 @@
 							<img class="img-fluid" src="https://i.pinimg.com/236x/6b/81/c3/6b81c330621f1d0fc951098deef846d3.jpg" alt="" />
 						</div>
 						<h2>Fiestas infantiles</h2>
-						<p>Temáticas de personajes, estaciones de juegos, shows interactivos.
+						<p>Temáticas de personajes que transportan a los invitados a mundos llenos de fantasía y diversión, estaciones de juegos diseñadas para desafiar habilidades y fomentar la interacción, y shows interactivos que capturan la atención con experiencias sorprendentes y llenas de emoción.
 						</p>
 						<a href="#contactForm">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
@@ -285,7 +284,7 @@
 							<img class="img-fluid" src="https://i.pinimg.com/236x/67/3f/80/673f80a4cff69630363c3ec75b262f5c.jpg" alt="" />
 						</div>
 						<h2>Baby showers</h2>
-						<p>Decoraciones temáticas, mesas de dulces, juegos y dinámicas para los invitados. </p>
+						<p>Decoraciones temáticas que crean una atmósfera única y envolvente, mesas de dulces repletas de delicias cuidadosamente seleccionadas para sorprender a los invitados, juegos diseñados para animar la celebración  .<p>
 						<a href="#contactForm">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
@@ -295,7 +294,7 @@
 							<img class="img-fluid" src="https://i.pinimg.com/236x/71/c2/5f/71c25f876eafdce5f2a947a1d107da07.jpg" alt="" />
 						</div>
 						<h2>Graduaciones</h2>
-						<p>Decoraciones personalizadas, mesas de dulces y organización de discursos y presentaciones.</p>
+						<p>Decoraciones personalizadas que reflejan el estilo y la esencia de cada evento, mesas de dulces cuidadosamente diseñadas para deleitar a los invitados con una variedad de sabores y colores, y una organización impecable de discursos y presentaciones para garantizar momentos memorables y bien estructurados.<p>
 						<a href="#contactForm">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
@@ -315,7 +314,7 @@
 							<img class="img-fluid" src="https://i.pinimg.com/736x/e5/4b/2a/e54b2aacec9fe8549485d8e785e0aa61.jpg" alt="" />
 						</div>
 						<h2>Bautizos</h2>
-						<p>Decoraciones temáticas, mesas de dulces, juegos y dinámicas para los invitados. </p>
+						<p>Decoraciones temáticas que transforman el ambiente según la ocasión, mesas de dulces cuidadosamente decoradas y llenas de variedad para deleitar a los asistentes, juegos entretenidos que fomentan la participación y dinámicas interactivas.<p>
 						<a href="#contactForm">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
@@ -325,7 +324,7 @@
 							<img class="img-fluid" src="https://i.pinimg.com/236x/45/96/6a/45966accf5c9a7b28efa55fcce614ace.jpg" alt="" />
 						</div>
 						<h2>Fiesta temáticas</h2>
-						<p>Eventos con ambientaciones especiales como fiestas de los años 80, Halloween, Navidad, etc. </p>
+						<p>Eventos con ambientaciones especiales que transportan a los asistentes a diferentes épocas y temáticas<p>
 						<a href="#contactForm">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
@@ -340,8 +339,8 @@
     <!-- Sección de Clima -->
 	 <center>
     <div class="weather-container">
-    <h1>Clima en tu Ubicación</h1>
-    <button onclick="getLocation()">Obtener mi ubicación</button>
+    <h1>Clima</h1>
+    <button onclick="getLocation()">Obtener Clima</button>
     <div class="weather-info" id="weather-info"></div>
 </div>
     <script src="js/script.js"></script>
